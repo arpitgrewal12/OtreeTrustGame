@@ -1,0 +1,12 @@
+{{ block title }}
+    Trust Game: Your Choice
+{{ endblock }}
+{{ block content }}
+<p>
+    You are Participant B. Participant A sent you {{group.sent_amount}}
+    and you received {{tripled_amount}}.
+</p>
+    {{ formfields group.sent_back_amount}}
+    {{ next_button }}
+
+{{ endblock }}
